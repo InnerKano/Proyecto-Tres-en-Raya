@@ -1,0 +1,29 @@
+
+Para utilizar Bootstrap 5 se debe descargar el Bootstrap del siguiente enlace:
+
+https://getbootstrap.com/docs/5.3/getting-started/download/
+
+Se crean en la carpeta ../src/assets dos carpetas: css y js.
+
+Se descomprime el archivo bootstrap-5.3.2-dist.zip descargado y de la carpeta css 
+que se encuentra allí, se copian los archivos bootstrap.min.css y bootstrap.css en la carpeta css creada,
+y de la carpeta js del zip se copia el archivo bootstrap.min.js en la carpeta js creada.
+
+Ahora se instala vueFlex con el siguiente comando en la carpeta de trabajo:
+    npm install vue-flex
+
+En el archivo main.js se agregan las siguientes lineas:
+
+import vueFlex from 'vue-flex'
+import './assets/css/bootstrap.min.css'
+import './assets/css/bootstrap.css'
+import './assets/js/bootstrap.bundle.min.js'
+
+y en createApp(App) se agrega el .use(vueFlex) antes del .mount('#app')
+
+Ahora ya se pueden incluir las clases de bootstrap en los componentes HTML que se requiera.
+
+Para incluir componentes pre-fabricados de bootstrap así como otros elementos, se pueden copiar de:
+
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+
